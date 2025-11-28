@@ -1,0 +1,19 @@
+NO ./textures/empty_wall.xpm
+WE ./textures/illuminated_wall.xpm
+SO ./textures/empty_wall.xpm
+EA ./textures/wall_window.xpm
+
+F 24,24,
+C 24,24,24
+
+11111111
+10000001
+1000E001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+11111111
+11111111

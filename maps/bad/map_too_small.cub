@@ -1,0 +1,10 @@
+NO ./textures/empty_wall.xpm
+WE ./textures/illuminated_wall.xpm
+SO ./textures/empty_wall.xpm
+EA ./textures/wall_window.xpm
+
+F 24,24,24
+C 24,24,24
+
+111
+111

@@ -1,0 +1,22 @@
+F 24,24,24
+C 24,24,24
+NO ./textures/empty_wall.xpm
+WE ./textures/illuminated_wall.xpm
+SO ./textures/empty_wall.xpm
+EA ./textures/wall_window.xpm
+
+
+
+
+
+       1111111111111111
+      100000000001
+      100000000001
+      100000000001
+      10000S000001
+      100000000001
+111111000101111111
+111000100001
+100000000001
+100000100001
+111111111111
