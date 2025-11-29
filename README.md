@@ -1,50 +1,67 @@
-# 42 Project Cub3D 👋
+# 🎮 Cub3D - A Wolfenstein 3D inspired Raycaster
 
-> Cub3D is a 42 school project. In this project we need to recreate the principe
-> of raycasting.
-> Raycasting is a computer graphics technique mainly used in 3D rendering and video games to simulate a 3D
-> perspective from a 2D world. It works by "casting rays" from the player's point of view into the game world to 
-> figure out what should be visible on the screen.
+![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c&logoColor=white)
+![Graphics](https://img.shields.io/badge/Library-MiniLibX-orange?style=for-the-badge)
+![School](https://img.shields.io/badge/School-42-000000?style=for-the-badge&logo=42&logoColor=white)
+![Grade](https://img.shields.io/badge/Grade-125%2F100-success?style=for-the-badge)
 
-> Raycasting was popularized by early 90s games like:
-> Wolfenstein 3D (1992) Test the Game : [Wolfenstein 3D](http://users.atw.hu/wolf3d/)
-> Doom (1993) Test the Game : [Doom](https://www.retrogames.cz/play_414-DOS.php)
+> **Cub3D** is a graphics project inspired by the 90s classic *Wolfenstein 3D*. It explores the **Raycasting** technique to render a 3D perspective from a 2D map.
 
-### [Homepage](https://github.com/SefgaultBros/Cub3D)
+![Gameplay Preview](preview.png)
 
-## Correction :
+## 🧠 What is Raycasting?
 
-Validated : **04/06/2025**
-Grade : ✅ **125%** ✅
+Raycasting is a rendering technique used to create a 3D perspective in a 2D map.
+Instead of rendering 3D polygons (like modern engines), the engine casts "rays" from the player's position. When a ray hits a wall, the engine calculates the distance to draw a vertical strip of pixels. The height of the strip depends on the distance: the further away, the smaller the wall.
 
-## Compile :
+This project implements the **DDA (Digital Differential Analyzer)** algorithm for precise ray collision detection.
 
-On Linux :
-- Minilibx Linux is include in the project
-- You need just to follow the following instructions
+## ✨ Features
 
-On Mac :
-- You Need to implement the Minilibx for Mac, and adapt the Makefile
-- And follow the following instructions
+### Mandatory Part
+* **Raycasting Engine:** Smooth 3D rendering using DDA.
+* **Texture Mapping:** Different textures for North, South, East, and West walls.
+* **Colors:** Floor and Ceiling colors defined in RGB.
+* **Map Parsing:** Reads `.cub` files to configure the map and textures.
 
-Execution :
-- FOR THE MANDATORY : just do `make` and `./cub3D`
-- FOR THE BONUS : just do `make` and `./cub3D_bonus`
+### 🌟 Bonus Part (Score: 125%)
+* **Wall Collisions:** Prevents the player from walking through walls.
+* **Minimap:** A 2D overlay showing the player's position in real-time.
+* **Mouse Rotation:** Look around using the mouse.
+* **Minimizing lag:** Optimized rendering loop.
 
-## 🎉 You can enjoy with this Beautiful Cub3D Implementation !!! 🎉
+## 🎮 Controls
 
-## Subject :
+| Key | Action |
+| :--- | :--- |
+| `W`, `A`, `S`, `D` | Move (Forward, Left, Back, Right) |
+| `←`, `→` | Rotate Camera |
+| `Mouse` | Rotate Camera (Bonus) |
+| `Q` | Shoot Animation |
+| `SPACE` | Open Doors |
+| `ESC` | Quit Game |
 
-Link to the Cub3D Subject : [Subject](https://github.com/SefgaultBros/Cub3D/blob/master/subject_Cub3D.pdf)
+## 🛠️ Installation & Usage
 
-## 📂 Explaination of Cub3D and RayCasting concept File 📂
+### 1. Requirements
+* **Linux:** `gcc`, `make`, `xorg`, `libxext-dev`, `libbsd-dev`.
+* **MacOS:** `make` (MLX uses OpenGL/AppKit).
 
-Link to a file of cub3D and Raycasting explanation created by us !
-[Explain_file](https://github.com/SefgaultBros/Cub3D/blob/master/Cub3D_explain_file_fr.pdf)
+### 2. Compilation
+To compile the game (with bonuses):
+```bash
+make bonus
+```
 
-## Author ✍️
+### 3. Run
 
-**NaYruk and Mcotonea Mulhouse 42 Students**
+```bash
+./cub3D_bonus maps/bonus/<choose a map>
+```
 
-* Github: [@NaYruk](https://github.com/NaYruk)
-* Github: [@Mcotonea](https://github.com/mcotonea42)
+## 👥 Authors
+
+This project was built by a duo:
+
+* **COTONEA Melvin** - [Voir le profil GitHub](https://github.com/mcotonea42)
+* **MILLIOT Marc** - [Voir le profil GitHub](https://github.com/NaYruk)
